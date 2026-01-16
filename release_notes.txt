@@ -1,0 +1,50 @@
+VERSION 1.0.33 (Latest - Jan 17 2026):
+- **Feature:** Added VR Mode support with "+ VR" and Green indicator on Satellite cards.
+- **Refactor:** Unified AR Map logic into `ARZoneExplorer` for better performance.
+- **Fix:** Backend AI Service stability improvements (Fixed NaN/Missing Stats error).
+- **UI:** Removed legacy AR floating button from Home screen.
+
+VERSION 1.0.31 (Jan 14 2026):
+- **UI:** Major Overhaul - "Super Dark Mode" unified across Home, Notifications, and Profile.
+- **UI:** New glowing accents and high-contrast text for better readability.
+- **UI:** Consistent background patterns fixed across all tabs.
+- **Fix:** Resolved infinite update loop (OTA vs APK priority inversion).
+
+VERSION 1.0.30:
+- **Fix:** Network Connection issues (Cleartext Traffic enabled).
+- **Fix:** Resolved "Verification Failed" crash by correcting API endpoints.
+- **Feature:** Added "Resend OTP" functionality with 30s timer and attempt limits.
+- **UI:** Enhanced OTP Modal with improved error messaging.
+
+VERSION 1.0.28 (Latest - Jan 12 2026):
+- **Fix:** Hybrid Update System now works correctly.
+- **Fix:** OTA updates now checked even when APK version matches.
+- **UI:** Added sparkle emoji to Settings title.
+
+VERSION 1.0.27 (Jan 12 2026):
+- **Fix:** Resolved "Update Check Failed" error completely.
+- **System:** Hybrid Update System Finalization.
+- **System:** Implemented Hybrid Update System (Native + OTA).
+- **Fix:** Fixed OTA Update Channel configuration ("Update Check Failed").
+- **UI FIX:** Fixed animated icons (GIFs) not showing in some views.
+- **SECURITY PATCH:** Enhanced Voice AI security rules.
+- **SECURITY PATCH:** Fixed Voice AI user context leak.
+- **SECURITY PATCH:** Voice AI now requires secure phone verification before connecting.
+- **Fix:** Resolved TypeScript type errors in WebView.
+
+VERSION 1.0.24 (Jan 11 2026):
+- **SECURITY PATCH:** Fixed Voice AI user context leak.
+- **SECURITY PATCH:** Voice AI now requires secure phone verification before connecting.
+- **Fix:** Resolved TypeScript type errors in WebView.
+
+VERSION 1.0.23:
+- **Feature:** AI Truth Synthesis. The AI now mathematically compares Satellite NDWI vs Sensor Moisture to detect "Hidden Stress" or "Confirmed Drought".
+- **Feature:** Portable Mode. Supports unlinked sensors acting as rovers; AI uses Device IDs to find data without strict field enforcement.
+- **Voice AI:** Switched to "Kore" voice for better Indian English/Hindi tone.
+- **Voice AI:** Proactive Suggestions. The AI now asks follow-up questions to keep the conversation going.
+- **UI:** Field Details AI Summary now enforces displaying specific sensor values (e.g., "Soil Moisture: 45%").
+
+VERSION 1.0.22 (Current):
+- **Optimization:** Disabled automatic IoT device reconnection on startup to prevent crashes.
+- **AI Update:** Voice AI and Chatbot now exclusively report on Soil Moisture sensors (NPK hidden).
+- **Backend:** Updated Live Service to filter device types.
